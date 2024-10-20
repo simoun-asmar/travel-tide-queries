@@ -10,17 +10,17 @@ Expected column names: `user_id`
 SELECT 
 	  user_id
 FROM 
-		sessions 
+	sessions 
 WHERE 
-		flight_booked = 'true'
-		AND
-    cancellation = 'false'			
+	flight_booked = 'true'
+	AND
+        cancellation = 'false'			
 GROUP BY 
-		1
+	1
 HAVING
-		COUNT(trip_id) >= 10
+	COUNT(trip_id) >= 10
 ORDER
-		BY 1
+	BY 1
 ;
 
 
